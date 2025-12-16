@@ -17,35 +17,33 @@ body {
   font-family: Poppins, Arial, sans-serif;
   background: #ffffff;
   color: #1f2937;
-  line-height: 1.6;
+  line-height: 1.55;
+  font-size: 14px; /* ↓ tamaño base */
 }
 
 /* CONTENEDOR */
 .section {
   width: 100%;
-  max-width: 1600px; /* más ancho en desktop */
+  max-width: 1600px;
   margin: auto;
   padding: 40px 40px;
 }
 
-
 /* BLOQUE */
 .block {
   display: flex;
-  gap: 100px; /* más aire entre imagen y texto */
+  gap: 100px;
   align-items: flex-start;
   margin-bottom: 50px;
 }
 
-
 /* IMAGEN */
 .block img {
   width: 100%;
-  max-width: 500px; /* MÁS GRANDE EN DESKTOP */
+  max-width: 500px;
   height: auto;
   display: block;
 }
-
 
 /* TEXTO */
 .block-content {
@@ -53,20 +51,21 @@ body {
 }
 
 .block-content h2 {
-  font-size: 16px;
-  margin-bottom: 18px;
+  font-size: 15px; /* ↓ antes 16px */
+  margin-bottom: 14px;
   color: #122d62;
 }
 
 .block-content p {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   text-align: justify;
+  font-size: 13.5px; /* ↓ texto */
 }
 
 /* BOTÓN */
 .btn-wrapper {
-  text-align: center; /* CENTRADO REAL */
-  margin-top: 20px;
+  text-align: center;
+  margin-top: 18px;
 }
 
 .btn {
@@ -74,14 +73,18 @@ body {
   background: #122d62;
   color: #ffffff;
   text-decoration: none;
-  padding: 12px 26px;
+  padding: 10px 22px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px; /* ↓ botón */
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
   .block {
     flex-direction: column;
     text-align: center;
@@ -89,6 +92,11 @@ body {
 
   .block-content p {
     text-align: left;
+    font-size: 13px;
+  }
+
+  .block-content h2 {
+    font-size: 14px;
   }
 
   .block img {
